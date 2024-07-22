@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'e-Ukraine';
+  src: local('e-Ukraine-Thin'), local('e-Ukraine-Thin'),
+    url('../fonts/e-Ukraine-Thin.woff2') format('woff2'),
+    url('../fonts/e-Ukraine-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: local('e-Ukraine-UltraLight'), local('e-Ukraine-UltraLight'),
+    url('../fonts/e-Ukraine-UltraLight.woff2') format('woff2'),
+    url('../fonts/e-Ukraine-UltraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: local('e-Ukraine-Light'), local('e-Ukraine-Light'),
+    url('../fonts/e-Ukraine-Light.woff2') format('woff2'),
+    url('../fonts/e-Ukraine-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: local('e-Ukraine-Regular'), local('e-Ukraine-Regular'),
+    url('../fonts/e-Ukraine-Regular.woff2') format('woff2'),
+    url('../fonts/e-Ukraine-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: local('e-Ukraine-Medium'), local('e-Ukraine-Medium'),
+    url('../fonts/e-Ukraine-Medium.woff2') format('woff2'),
+    url('../fonts/e-Ukraine-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: local('e-Ukraine-Bold'), local('e-Ukraine-Bold'),
+    url('../fonts/e-Ukraine-Bold.woff2') format('woff2'),
+    url('../fonts/e-Ukraine-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arista-Pro';
+  src: local('Arista-Pro-Alternate-Bold-trial'), local('Arista-Pro-Alternate-Bold-trial'),
+    url('../fonts/Arista-Pro-Alternate-Bold-trial.woff2') format('woff2'),
+    url('../fonts/Arista-Pro-Alternate-Bold-trial.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arista-Pro';
+  src: local('Arista-Pro-Alternate-Regular-trial'), local('Arista-Pro-Alternate-Regular-trial'),
+    url('../fonts/Arista-Pro-Alternate-Regular-trial.woff2') format('woff2'),
+    url('../fonts/Arista-Pro-Alternate-Regular-trial.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}

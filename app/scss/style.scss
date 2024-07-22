@@ -1,0 +1,297 @@
+@import 'fonts';
+@import 'global';
+@import 'btns';
+
+.header {
+  color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  background-color: transparent;
+  transition: linear .2s;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 9.5rem;
+  }
+
+  &__logo {
+    width: 17rem;
+    margin: 0 3rem 0 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__nav {
+    margin: 0 32rem 0 auto;
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+
+    li+li {
+      margin: 0 0 0 6rem;
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: linear .2s;
+
+      &:hover {
+        text-decoration-color: #fff;
+      }
+    }
+  }
+
+  &__tel {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    transition: linear .2s;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
+  &__menu-btn {
+    display: none;
+  }
+}
+
+.header.sticky {
+  background-color: #0B1F52;
+}
+
+/*start intro===========*/
+.intro {
+  padding: 22rem 0 6rem 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 73rem;
+    width: 100%;
+    margin: 0 3rem 0 0;
+
+    img {
+      width: 100%;
+      height: 11rem;
+      object-fit: contain;
+    }
+
+    h6 {
+      margin: 0 0 3rem 0;
+      color: rgb(255, 255, 255);
+      font-family: 'Arista-Pro';
+      font-size: 54px;
+      font-weight: 400;
+      line-height: 130%;
+      text-transform: lowercase;
+    }
+
+    p {
+      margin: 0 0 1.5rem 0;
+    }
+  }
+
+  .btn {
+    margin: 9rem 0 0 0;
+  }
+
+  &__right {
+    margin: -11rem 0 0 0;
+    max-width: 81.5rem;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+/*end intro===========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*start footer===========*/
+.footer {
+  background-color: #00B927;
+  padding: 6rem 0 0;
+  color: #fff;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__logo {
+    margin: 0 9.5rem 0 0;
+    width: 19.5rem;
+    height: 6rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain
+    }
+  }
+
+  nav {
+    margin: 0 20rem 0 0;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+    li {
+      margin: 0 0 1.5rem 0;
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: linear .2s;
+
+      &:hover {
+        text-decoration-color: #fff;
+      }
+    }
+  }
+
+  &__box {
+    max-width: 76rem;
+    width: 100%;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 0 -8rem;
+    }
+
+    li {
+      width: calc(50% - 8rem);
+      margin: 0 0 6rem 8rem;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: underline;
+      text-decoration-color: #fff;
+      transition: linear .2s;
+      font-size: 2rem;
+
+      &:hover {
+        text-decoration-color: transparent;
+      }
+
+      img {
+        margin: 0 1.5rem 0 0;
+      }
+    }
+  }
+
+  &__col {
+    margin: 0 0 0 3rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 3.2rem;
+      height: 3.2rem;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    li {
+      margin: 0 0 6rem 0;
+      transition: linear .2s;
+      &:hover{
+        opacity: .8;
+      }
+    }
+  }
+}
+
+.subfooter {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  line-height: 120%;
+
+  &__inner {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      padding: 1rem 1rem 1rem 0;
+      margin: 0 1rem 0 0;
+      border-right: .2rem solid #fff;
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-color: #fff;
+      transition: linear .2s;
+      font-size: 2rem;
+
+      &:hover {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+}
+
+/*end footer===========*/
+
+.up-page {
+  position: fixed;
+  z-index: 10;
+  right: 10rem;
+  bottom: 5rem;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  transition: linear .2s;
+  &:hover{
+    opacity: .8;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+
+
+@import "media";
