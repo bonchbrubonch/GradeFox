@@ -31,6 +31,17 @@ var swiper = new Swiper('.programm__slider', {
   },
 });
 
+var swiper = new Swiper('.review__slider', {
+  slidesPerView: 1,
+  spaceBetween: 200,
+  loop: true,
+  navigation: {
+    replaceState: true,
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 
   /*start play video===========*/
   document.addEventListener("DOMContentLoaded", function() {

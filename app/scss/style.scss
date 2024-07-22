@@ -226,17 +226,19 @@
 
 /*start programmm==========*/
 .programm {
-  padding: 4.5rem 0 3rem;
+  padding: 4.5rem 0 6rem;
 
   .title {
     text-align: center;
     margin: 0 0 3rem 0;
   }
-  &__inner{
+
+  &__inner {
     max-width: 130rem;
     width: 100%;
-    margin: 0 auto;  
+    margin: 0 auto;
   }
+
   &__tabs {
     display: flex;
     max-width: 101rem;
@@ -361,6 +363,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 0 6rem 0;
+
     h4 {
       margin: 0 0 3rem 0;
       color: rgb(238, 255, 242);
@@ -384,6 +387,7 @@
       border-radius: 2rem;
       overflow: hidden;
       height: 365px;
+
       img {
         width: 100%;
         height: 100%;
@@ -394,11 +398,12 @@
     .swiper-button-prev,
     .swiper-button-next {
       position: absolute;
-      &::after{
+
+      &::after {
         display: none;
       }
     }
-    
+
   }
 
 }
@@ -450,9 +455,227 @@
 
 /*end programmm==========*/
 
+/*start review===========*/
+.review {
+  padding: 6rem 0 6rem;
+
+  .title {
+    text-align: center;
+    margin: 0 0 2rem 0;
+  }
+
+  .container>p {
+    max-width: 93rem;
+    width: 100%;
+    margin: 0 auto 5rem;
+    text-align: center;
+  }
+
+  &__slider {
+    position: relative;
+    padding: 0 12.5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .swiper-slide {
+    padding: 6rem 11.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 6px 3px 20px 0px rgba(0, 40, 6, 0.85);
+    box-sizing: border-box;
+    border: 3px solid #FFB800;
+
+    p {
+      color: rgb(255, 255, 255);
+      font-size: 2rem;
+      line-height: 150%;
+    }
+  }
+
+  &__img {
+    margin: 0 7rem 0 0;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: rgb(255, 255, 255);
+      font-family: 'e-Ukraine';
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      margin: 0 0 0 auto;
+      transition: linear .2s;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+
+      &:hover {
+        text-decoration-color: #fff;
+      }
+
+      img {
+        width: 3rem;
+        height: 3rem;
+        margin: 0 0 0 1rem;
+      }
+    }
+  }
+
+  &__name {
+    color: rgb(255, 255, 255);
+    font-family: 'Arista-Pro';
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 100%;
+  }
 
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 9rem;
+    height: 7rem;
+    position: absolute;
+    top: 2.2rem;
 
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+}
+
+/*end review===========*/
+
+/*start excellence===========*/
+.excellence {
+  padding: 8rem 0 5rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 5rem 0;
+    .title {
+      max-width: 74rem;
+      line-height: 100%;
+    }
+
+    p {
+      max-width: 87rem;
+      width: 100%;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    max-width: 132rem;
+    width: 100%;
+    margin: 0 3rem 0 -5.5rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  li {
+    padding: 0 0 0 15rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 5.5rem);
+    margin: 0 0 10rem 5.5rem;
+
+    h6 {
+      color: rgb(253, 121, 20);
+      font-family: 'Arista-Pro';
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 110%;
+      text-transform: lowercase;
+    }
+
+    p {
+      margin: 0;
+      color: rgb(255, 255, 255);
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+
+    img {
+      position: relative;
+      z-index: 1;
+      width: 11.5rem;
+      height: 11.5rem;
+      object-fit: contain;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(25deg);
+      width: 10rem;
+      height: 10rem;
+      border-radius: 2rem;
+      box-shadow: 0px 1, 4rem 4.4rem 0 rgba(0, 0, 0, .25);
+      background: linear-gradient(152.2deg, rgb(253, 121, 20) 9.082%, rgb(255, 184, 0) 100.981%);
+    }
+  }
+
+  &__right {
+    max-width: 43rem;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+}
+
+/*end excellence===========*/
 
 
 
