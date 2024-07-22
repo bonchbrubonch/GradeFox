@@ -74,7 +74,7 @@
 
 /*start intro===========*/
 .intro {
-  padding: 22rem 0 6rem 0;
+  padding: 22rem 0 3rem 0;
 
   &__inner {
     display: flex;
@@ -96,7 +96,7 @@
       margin: 0 0 3rem 0;
       color: rgb(255, 255, 255);
       font-family: 'Arista-Pro';
-      font-size: 54px;
+      font-size: 5.4rem;
       font-weight: 400;
       line-height: 130%;
       text-transform: lowercase;
@@ -128,6 +128,8 @@
 
 /*start invite============*/
 .invite {
+  padding: 3rem 0 4rem;
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -136,8 +138,8 @@
   &__left {
     position: relative;
     z-index: 1;
-    max-width: 68rem;
-    width: 100%;
+    width: 74rem;
+    flex-shrink: 0;
 
     img {
       width: 100%;
@@ -148,18 +150,23 @@
 
   &__right {
     max-width: 120rem;
-    margin: 0 0 0 -10rem;
+    margin: 0 0 0 -20rem;
+    padding: 13rem 0 0 0;
   }
 
   &__box {
     display: flex;
     align-items: center;
+    padding: 5.5rem 11rem 5.5rem 13rem;
+    margin: 0 0 5rem 0;
+    border-radius: 20px;
+    border: 3px solid #FD7914;
   }
 
   h6 {
     color: rgb(255, 255, 255);
     font-family: 'Arista-Pro';
-    font-size: 54px;
+    font-size: 5.4rem;
     font-weight: 700;
     line-height: 100%;
   }
@@ -167,28 +174,281 @@
   span {
     display: block;
     width: fit-content;
-    padding: 0.8rem -3rem;
+    padding: 0.1rem 3rem;
+    margin: 0 5rem;
     color: rgb(255, 255, 255);
     font-family: 'Arista-Pro';
-    font-size: 54px;
+    font-size: 5.4rem;
     font-weight: 700;
     line-height: 100%;
     text-transform: lowercase;
-    border-radius: 20px;
-    box-shadow: 4px 5px 14.3px 0px rgba(13, 54, 6, 0.25);
+    border-radius: 2rem;
+    box-shadow: .4rem .5rem 1.4rem 0 rgba(13, 54, 6, 0.25);
     background: rgb(0, 185, 39);
   }
 
-  p {}
+  p {
+    padding: 0 0 0 13rem;
+    margin: 0 0 1.5rem 0;
+  }
 
   .soc {
-    li+li {}
+    padding: 0 0 0 13rem;
+    margin: 6rem 0 0 0;
+  }
+}
+
+.soc {
+  display: flex;
+
+  li {
+    margin: 0 6rem 3rem 0;
+    transition: linear .2s;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.5rem;
+    height: 8.5rem;
+    border-radius: 20px;
+    box-shadow: 4px 5px 14.3px 0px rgba(13, 54, 6, 0.25);
+    background: rgb(0, 185, 39);
   }
 }
 
 /*end invite============*/
 
+/*start programmm==========*/
+.programm {
+  padding: 4.5rem 0 3rem;
 
+  .title {
+    text-align: center;
+    margin: 0 0 3rem 0;
+  }
+  &__inner{
+    max-width: 130rem;
+    width: 100%;
+    margin: 0 auto;  
+  }
+  &__tabs {
+    display: flex;
+    max-width: 101rem;
+    width: 100%;
+    margin: 0 auto 6rem;
+    box-sizing: border-box;
+    border: .3rem solid #FD7914;
+    border-radius: 2rem;
+    overflow: hidden;
+
+  }
+
+  &__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(253, 121, 20);
+    font-family: 'Arista-Pro';
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 110%;
+    width: 50%;
+    transition: linear .2s;
+
+    span {
+      display: flex;
+      margin: 0 0.5rem;
+      font-family: 'e-Ukraine';
+      font-size: 32px;
+    }
+  }
+
+  &__tab.active {
+    background-color: #FD7914;
+    color: #fff;
+  }
+
+
+
+  &__inner+.btn {
+    margin: 6rem auto 8rem;
+  }
+
+  &__inner-twoo {
+    margin: 0 0 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      max-width: 93rem;
+      width: 100%;
+      margin: 0 3rem 0 -5.5rem;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+    }
+
+    li {
+      display: flex;
+      width: calc(50% - 5.5rem);
+      margin: 0 0 9rem 5.5rem;
+    }
+  }
+
+  &__img {
+    margin: 0 2.5rem 0 0;
+    width: 11rem;
+    height: 11rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(25deg);
+      width: 10rem;
+      height: 10rem;
+      border-radius: 2rem;
+      box-shadow: 0px 1, 4rem 4.4rem 0 rgba(0, 0, 0, 0.25);
+      background: linear-gradient(152.20deg, rgb(253, 121, 20) 9.082%, rgb(255, 184, 0) 100.981%);
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+      width: 11.5rem;
+      height: 11.5rem;
+      object-fit: contain;
+    }
+  }
+
+  &__right {
+    max-width: 69rem;
+    width: 100%;
+
+    p {
+      margin: 0 0 2.5rem 0;
+    }
+
+    h4 {
+      margin: 0 0 3rem 0;
+      color: rgb(238, 255, 242);
+      font-family: 'Arista-Pro';
+      font-size: 6.3rem;
+      font-weight: 700;
+      line-height: 120%;
+    }
+  }
+
+
+  &__inner-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 6rem 0;
+    h4 {
+      margin: 0 0 3rem 0;
+      color: rgb(238, 255, 242);
+      font-family: 'Arista-Pro';
+      font-size: 6.3rem;
+      font-weight: 700;
+      line-height: 120%;
+    }
+
+    .btn {
+      margin: 0 0 0 auto;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    margin: 0 0 0 29rem;
+    overflow: hidden;
+
+    .swiper-slide {
+      border-radius: 2rem;
+      overflow: hidden;
+      height: 365px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      &::after{
+        display: none;
+      }
+    }
+    
+  }
+
+}
+
+.video__inner {
+  position: relative;
+  width: 100%;
+  height: 73rem;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.video__inner.play .video__img {
+  opacity: 0;
+  z-index: -1;
+  -webkit-transform: scale(3);
+  -ms-transform: scale(3);
+  transform: scale(3);
+}
+
+
+.video__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  -webkit-transition: linear .5s;
+  -o-transition: linear .5s;
+  transition: linear .5s;
+  z-index: 2;
+}
+
+.video__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*end programmm==========*/
 
 
 
@@ -205,6 +465,8 @@
   color: #fff;
 
   &__inner {
+    left: 0;
+    right: 0;
     display: flex;
   }
 
