@@ -15,17 +15,19 @@ $(function () {
     this.classList.toggle("active");
     document.querySelector(".header__nav").classList.toggle("open");
     document.body.classList.toggle("lock");
+    document.querySelector("header").classList.toggle("active"); // Add this line
   });
-
+  
   document.addEventListener("DOMContentLoaded", function () {
     const categoryTitles = document.querySelectorAll(".header__nav");
-
+  
     categoryTitles.forEach(function (title) {
       title.addEventListener("click", function () {
         this.classList.toggle("active");
       });
     });
   });
+  
 
 
   $('.programm__inner').each(function () {

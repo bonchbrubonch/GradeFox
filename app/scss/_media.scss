@@ -374,7 +374,7 @@
   }
 
   .programm__slider-item {
-    border-radius: rem;
+    border-radius: 1rem;
     height: 25rem;
   }
 
@@ -684,7 +684,16 @@
     font-size: 1.2rem;
   }
 
-
+  .mob-item{
+    display: block;
+     a{
+      display: block;
+      font-size: 1.6rem;
+    }
+  }
+  .header__nav ul{
+    align-items: flex-start;
+  }
 }
 
 

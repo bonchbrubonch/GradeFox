@@ -67,8 +67,11 @@
     display: none;
   }
 }
-
-.header.sticky {
+.mob-item{
+  display: none;
+}
+.header.sticky,
+.header.active {
   background-color: #0B1F52;
 }
 
