@@ -17,15 +17,15 @@ html {
   //   font-size: calc(100vw / 1400 * 10);
   // }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 991px) {
     font-size: calc(100vw / 768 * 10);
   }
 
   @media (max-width: 767px) {
-    font-size: calc(100vw / 500 * 10);
+    font-size: calc(100vw / 575 * 10);
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 575px) {
     font-size: calc(100vw / 320 * 10);
   }
 }

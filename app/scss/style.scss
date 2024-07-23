@@ -200,7 +200,7 @@
 
 .soc {
   display: flex;
-
+  flex-wrap: wrap;
   li {
     margin: 0 6rem 3rem 0;
     transition: linear .2s;
@@ -396,6 +396,12 @@
       top: -1rem;
       cursor: pointer;
       transition: linear .2s;
+      width: 14rem;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
       &:hover{
         opacity: .8;
       }
@@ -602,7 +608,7 @@
     width: 9rem;
     height: 7rem;
     position: absolute;
-    top: 2.2rem;
+    top: 2.8rem;
 
     img {
       width: 100%;
@@ -993,9 +999,9 @@
 
   &__box {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 0 0 0 -3.5rem;
-
+    flex-wrap: wrap;
     .cost__coll {
       strong {
         color: #fff;
@@ -1222,7 +1228,7 @@
       right: 2rem;
       width: 2rem;
       height: 2rem;
-      border: .5rem solid #FD7914;
+      border: .5rem solid #fff;
       border-top: none;
       border-left: none;
       transition: linear .2s;
@@ -1231,6 +1237,8 @@
 
   dt.active::before {
     transform: rotate(-135deg);
+    border-color: #FD7914;
+    
   }
 
   dd {

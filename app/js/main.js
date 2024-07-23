@@ -10,6 +10,24 @@ $(function () {
   });
   /*end header====*/
 
+  /*меню гамбургер*/
+  document.querySelector(".header__menu-btn").addEventListener("click", function () {
+    this.classList.toggle("active");
+    document.querySelector(".header__nav").classList.toggle("open");
+    document.body.classList.toggle("lock");
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const categoryTitles = document.querySelectorAll(".header__nav");
+
+    categoryTitles.forEach(function (title) {
+      title.addEventListener("click", function () {
+        this.classList.toggle("active");
+      });
+    });
+  });
+
+
   $('.programm__inner').each(function () {
     let ths = $(this);
     ths.find('.programm__item').not(':first').hide();
@@ -18,7 +36,7 @@ $(function () {
       ths.find('.programm__item').hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass('active');
   });
-  
+
   $(".accordeon dd").hide().prev().click(function () {
     $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
     $(this).next().not(":visible").slideDown().prev().addClass("active");
@@ -35,6 +53,20 @@ $('.programm__slider').slick({
   slidesToScroll: 1,
   prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/icons/alider-arrow4.svg"></img>',
   nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/icons/alider-arrow1.svg"></img>',
+  responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
 });
 
 
@@ -49,13 +81,23 @@ var swiper = new Swiper('.review__slider', {
   },
 });
 var swiper = new Swiper('.team__slider', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 120,
   loop: true,
   navigation: {
     replaceState: true,
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      spaceBetween: 30,
+      slidesPerView: 2,
+    },
+    992: {
+      spaceBetween: 30,
+      slidesPerView: 3,
+    },
   },
 });
 
