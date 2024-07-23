@@ -41,39 +41,49 @@ var swiper = new Swiper('.review__slider', {
     prevEl: '.swiper-button-prev',
   },
 });
+var swiper = new Swiper('.team__slider', {
+  slidesPerView: 3,
+  spaceBetween: 120,
+  loop: true,
+  navigation: {
+    replaceState: true,
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 
-  /*start play video===========*/
-  document.addEventListener("DOMContentLoaded", function() {
-    const videoInnerElements = document.querySelectorAll(".video__inner");
-    const programmTabElements = document.querySelectorAll(".programm__tab");
-  
-    videoInnerElements.forEach(function(videoInner) {
-      videoInner.addEventListener("click", function() {
-        videoInner.classList.add("play");
-  
-        const videoIframe = videoInner.querySelector(".video__bg");
-        const videoSrc = videoIframe.getAttribute("src");
-        videoIframe.setAttribute("src", videoSrc + "?autoplay=1");
-      });
-    });
-  
-    programmTabElements.forEach(function(tab) {
-      tab.addEventListener("click", function() {
-        if (!tab.classList.contains("active")) {
-          videoInnerElements.forEach(function(videoInner) {
-            videoInner.classList.remove("play");
-  
-            const videoIframe = videoInner.querySelector(".video__bg");
-            const videoSrc = videoIframe.getAttribute("src");
-  
-            // Remove ?autoplay=1 if present
-            const newSrc = videoSrc.replace("?autoplay=1", "").replace("&autoplay=1", "");
-            videoIframe.setAttribute("src", newSrc);
-          });
-        }
-      });
+/*start play video===========*/
+document.addEventListener("DOMContentLoaded", function () {
+  const videoInnerElements = document.querySelectorAll(".video__inner");
+  const programmTabElements = document.querySelectorAll(".programm__tab");
+
+  videoInnerElements.forEach(function (videoInner) {
+    videoInner.addEventListener("click", function () {
+      videoInner.classList.add("play");
+
+      const videoIframe = videoInner.querySelector(".video__bg");
+      const videoSrc = videoIframe.getAttribute("src");
+      videoIframe.setAttribute("src", videoSrc + "?autoplay=1");
     });
   });
-  
-  /*end play video===========*/
+
+  programmTabElements.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      if (!tab.classList.contains("active")) {
+        videoInnerElements.forEach(function (videoInner) {
+          videoInner.classList.remove("play");
+
+          const videoIframe = videoInner.querySelector(".video__bg");
+          const videoSrc = videoIframe.getAttribute("src");
+
+          // Remove ?autoplay=1 if present
+          const newSrc = videoSrc.replace("?autoplay=1", "").replace("&autoplay=1", "");
+          videoIframe.setAttribute("src", newSrc);
+        });
+      }
+    });
+  });
+});
+
+/*end play video===========*/
