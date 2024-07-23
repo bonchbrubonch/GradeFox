@@ -75,8 +75,24 @@
 /*start intro===========*/
 .intro {
   padding: 22rem 0 3rem 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/content/intro-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 100%;
+    height: 150rem;
+  }
 
   &__inner {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
   }
@@ -129,8 +145,24 @@
 /*start invite============*/
 .invite {
   padding: 3rem 0 3rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -60rem;
+    right: 0px;
+    background-image: url("../images/content/invite-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 100%;
+    height: 125rem;
+  }
 
   &__inner {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
   }
@@ -201,6 +233,7 @@
 .soc {
   display: flex;
   flex-wrap: wrap;
+
   li {
     margin: 0 6rem 3rem 0;
     transition: linear .2s;
@@ -233,6 +266,20 @@
 /*start programmm==========*/
 .programm {
   padding: 4.5rem 0 6rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -50rem;
+    right: 0px;
+    background-image: url("../images/content/video-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 100%;
+    height: 125rem;
+  }
 
   .title {
     text-align: center;
@@ -246,6 +293,8 @@
   }
 
   &__tabs {
+    position: relative;
+    z-index: 1;
     display: flex;
     max-width: 101rem;
     width: 100%;
@@ -287,8 +336,6 @@
     background-color: #FD7914;
     color: #fff;
   }
-
-
 
   &__inner+.btn {
     margin: 6rem auto 8rem;
@@ -388,25 +435,30 @@
     .slick-slide {
       margin: 0 3rem 0 0;
     }
-    .slick-list{
+
+    .slick-list {
       margin: 0 0 0 20%;
     }
-    .slider-arrows{
+
+    .slider-arrows {
       position: absolute;
       top: -1rem;
       cursor: pointer;
       transition: linear .2s;
       width: 14rem;
-      img{
+
+      img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
-      &:hover{
+
+      &:hover {
         opacity: .8;
       }
     }
-    .slider-arrows__right{
+
+    .slider-arrows__right {
       left: 12rem;
     }
   }
@@ -572,34 +624,34 @@
     border: none;
     float: left;
   }
-  
-  .rating > label {
+
+  .rating>label {
     color: #fff;
     float: right;
   }
-  
-  .rating > label:before {
+
+  .rating>label:before {
     margin: .5rem;
     font-size: 2rem;
     font-family: 'FontAwesome';
     content: "\f005";
     display: inline-block;
   }
-  
-  .rating > input {
+
+  .rating>input {
     display: none;
   }
-  
-  .rating > input:checked ~ label,
-  .rating:not(:checked) > label:hover,
-  .rating:not(:checked) > label:hover ~ label {
+
+  .rating>input:checked~label,
+  .rating:not(:checked)>label:hover,
+  .rating:not(:checked)>label:hover~label {
     color: #F79426;
   }
-  
-  .rating > input:checked + label:hover,
-  .rating > input:checked ~ label:hover,
-  .rating > label:hover ~ input:checked ~ label,
-  .rating > input:checked ~ label:hover ~ label {
+
+  .rating>input:checked+label:hover,
+  .rating>input:checked~label:hover,
+  .rating>label:hover~input:checked~label,
+  .rating>input:checked~label:hover~label {
     color: #FECE31;
   }
 
@@ -817,12 +869,28 @@
 /*start map=============*/
 .map {
   padding: 6rem 0 5rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -50rem;
+    right: 0px;
+    background-image: url("../images/content/video-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 100%;
+    height: 125rem;
+  }
 
   .title {
     text-align: center;
   }
 
   &__inner {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
   }
@@ -883,6 +951,20 @@
 /*cost================*/
 .cost {
   padding: 0 0 4rem 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -25rem;
+    right: 0px;
+    background-image: url("../images/content/invite-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 100%;
+    height: 125rem;
+  }
 
   &__top {
     display: flex;
@@ -1002,6 +1084,7 @@
     justify-content: flex-start;
     margin: 0 0 0 -3.5rem;
     flex-wrap: wrap;
+
     .cost__coll {
       strong {
         color: #fff;
@@ -1066,6 +1149,8 @@
   padding: 7.5rem 0 8rem;
 
   &__inner {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     box-shadow: .6rem .3rem .2rem 0 rgba(0, 40, 6, .85);
@@ -1238,7 +1323,7 @@
   dt.active::before {
     transform: rotate(-135deg);
     border-color: #FD7914;
-    
+
   }
 
   dd {

@@ -95,7 +95,7 @@ var swiper = new Swiper('.team__slider', {
       slidesPerView: 2,
     },
     992: {
-      spaceBetween: 30,
+      spaceBetween: 120,
       slidesPerView: 3,
     },
   },
