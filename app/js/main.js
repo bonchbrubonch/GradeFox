@@ -18,18 +18,25 @@ $(function () {
       ths.find('.programm__item').hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass('active');
   });
+  
+  $(".accordeon dd").hide().prev().click(function () {
+    $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
+    $(this).next().not(":visible").slideDown().prev().addClass("active");
+    $("dl").removeClass("open");
+    $(this).parent().toggleClass("open");
+  });
 })
 
 
-var swiper = new Swiper('.programm__slider', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  navigation: {
-    replaceState: true,
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+
+$('.programm__slider').slick({
+  infinite: false,
+  slidesToShow: 2.5,
+  slidesToScroll: 1,
+  prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/icons/alider-arrow4.svg"></img>',
+  nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/icons/alider-arrow1.svg"></img>',
 });
+
 
 var swiper = new Swiper('.review__slider', {
   slidesPerView: 1,
