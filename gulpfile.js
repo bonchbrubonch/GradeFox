@@ -48,7 +48,7 @@ function scripts(){
 
 function styles(){
     return src('app/scss/style.scss')
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))  /*expanded за замовчуванням  expanded - мініфікує стилі*/
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))  /*expanded за замовчуванням  compressed - мініфікує стилі*/
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],

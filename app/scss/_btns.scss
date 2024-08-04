@@ -14,16 +14,24 @@
   line-height: 150%;
   padding: 2.4rem 5.5rem;
   border-radius: 20px;
-  transition: linear .2s;
+  transition: linear .4s;
   position: relative;
   z-index: 1;
-  img{
+  img,
+  svg{
     margin: 0 0 0 1.5rem !important;
     width: 3rem !important;
     height: 3rem !important;
   }
+  svg path{
+    transition: linear .2s;
+  }
   &:hover{
     transform: translate(-.2rem, -.2rem);
+    color: #0b1f52;
+    svg path{
+      fill: #0b1f52;
+    }
   }
   &--orange {
     background: rgb(255, 118, 27);

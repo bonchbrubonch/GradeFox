@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header element-animation">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <img src="images/icons/logo.svg" alt="logo">
+        </a>
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="#">
+                Головна
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Про нас
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Програма
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Контакти
+              </a>
+            </li>
+            <li class="mob-item">
+              <a href="tel:+380971615835" class="header__tel">
+                +38 (097)-161-58-35
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+380971615835" class="header__tel">
+          +38 (097)-161-58-35
+        </a>
+        <button class="header__menu-btn">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main">
+
+      <section class="intro intro--twoo">
+        <div class="container">
+          <div class="intro__inner">
+            <div class="intro__left element-animation">
+              <h6>GradeFox - школа англійської мови для українців по всьому світу!</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. labore et dolore magna aliqua. labore et dolore magna aliqua.
+              </p>
+              <a href="#" class="btn btn--orange">
+                записатися на пробний урок
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M27.3727 13.4286C27.4111 8.91699 23.5686 4.78104 18.807 4.20911C18.7123 4.19788 18.6092 4.18079 18.4999 4.1627C18.2642 4.12364 18.0204 4.0835 17.7745 4.0835C16.7986 4.0835 16.5377 4.76901 16.469 5.17786C16.4022 5.57537 16.4659 5.90919 16.658 6.17045C16.9812 6.60991 17.5499 6.68792 18.0066 6.75043C18.1405 6.76891 18.2668 6.7861 18.3725 6.80986C22.6506 7.76578 24.0911 9.26869 24.7951 13.5104C24.8123 13.614 24.82 13.7417 24.8283 13.8772C24.859 14.3842 24.923 15.4391 26.0571 15.4391H26.0572C26.1516 15.4391 26.2531 15.431 26.3587 15.4149C27.4148 15.2544 27.3817 14.2901 27.3658 13.8268C27.3614 13.6963 27.3571 13.5729 27.3681 13.4908C27.3711 13.4701 27.3726 13.4494 27.3727 13.4286Z"
+                    fill="white" />
+                  <path
+                    d="M17.4984 2.55284C17.6251 2.56199 17.745 2.57073 17.8449 2.58604C24.8699 3.66638 28.1006 6.99478 28.9959 14.0747C29.0111 14.1951 29.0135 14.3419 29.016 14.4973C29.0249 15.0504 29.0433 16.2011 30.2791 16.225L30.3175 16.2254C30.705 16.2254 31.0133 16.1085 31.2338 15.8778C31.6185 15.4754 31.5917 14.8776 31.57 14.3972C31.5648 14.2794 31.5597 14.1683 31.561 14.0712C31.6503 6.83021 25.3825 0.264149 18.148 0.0199752C18.118 0.0189814 18.0894 0.0205714 18.0605 0.024646C18.0463 0.0267329 18.0199 0.0293168 17.9748 0.0293168C17.9027 0.0293168 17.8139 0.0230559 17.7198 0.0166957C17.606 0.0089441 17.477 0 17.3462 0C16.1941 0 15.9751 0.818882 15.9471 1.30703C15.8825 2.43518 16.9739 2.51458 17.4984 2.55284Z"
+                    fill="white" />
+                  <path
+                    d="M28.6566 23.2251C28.5072 23.111 28.3528 22.9929 28.2082 22.8765C27.4412 22.2592 26.6252 21.6903 25.836 21.14C25.6722 21.0259 25.5084 20.9117 25.3453 20.7973C24.3344 20.0872 23.4256 19.7422 22.5669 19.7422C21.4105 19.7422 20.4022 20.3812 19.57 21.6412C19.2013 22.1998 18.754 22.4714 18.2027 22.4714C17.8767 22.4714 17.5064 22.3784 17.102 22.1948C13.8391 20.7152 11.5091 18.4466 10.1768 15.452C9.5327 14.0046 9.74149 13.0585 10.875 12.2885C11.5187 11.8517 12.7168 11.0384 12.6319 9.48089C12.5358 7.71224 8.63342 2.3906 6.98919 1.78618C6.29305 1.53018 5.56162 1.5278 4.81131 1.78022C2.92112 2.41565 1.5647 3.53157 0.888325 5.00715C0.23471 6.43294 0.264226 8.10708 0.973691 9.84859C3.02467 14.8837 5.90825 19.2737 9.54462 22.8963C13.104 26.4426 17.4787 29.3474 22.5473 31.5299C23.0041 31.7265 23.4833 31.8337 23.8332 31.9119C23.9525 31.9387 24.0554 31.9616 24.1305 31.9822C24.1717 31.9934 24.2142 31.9995 24.2569 31.9998L24.2969 32C24.2969 32 24.2969 32 24.2971 32C26.681 32 29.5434 29.8217 30.4225 27.3382C31.1927 25.1636 29.7865 24.0887 28.6566 23.2251Z"
+                    fill="white" />
+                  <path
+                    d="M18.5523 8.30458C18.1442 8.31492 17.2948 8.33598 16.9967 9.20108C16.8573 9.60535 16.874 9.95636 17.0464 10.2444C17.2995 10.6669 17.7842 10.7964 18.2252 10.8675C19.8243 11.1241 20.6455 12.0083 20.8098 13.6501C20.8861 14.4156 21.4016 14.9501 22.0635 14.9501C22.1124 14.9501 22.1625 14.9473 22.2122 14.9412C23.0083 14.8465 23.3942 14.2616 23.3593 13.2031C23.372 12.0983 22.7938 10.844 21.8105 9.84495C20.8237 8.84282 19.6343 8.27844 18.5523 8.30458Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+            <div class="intro__right element-animation">
+              <div class="modal__parallax-wrap element-animation">
+                <img class="modal__parallax" src="images/content/intro2.webp" alt="img" value="0.8">
+              </div>
+            </div>
+            <a href="#" class="btn btn--orange btn-mob element-animation">
+              записатися на пробний урок
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M27.3727 13.4286C27.4111 8.91699 23.5686 4.78104 18.807 4.20911C18.7123 4.19788 18.6092 4.18079 18.4999 4.1627C18.2642 4.12364 18.0204 4.0835 17.7745 4.0835C16.7986 4.0835 16.5377 4.76901 16.469 5.17786C16.4022 5.57537 16.4659 5.90919 16.658 6.17045C16.9812 6.60991 17.5499 6.68792 18.0066 6.75043C18.1405 6.76891 18.2668 6.7861 18.3725 6.80986C22.6506 7.76578 24.0911 9.26869 24.7951 13.5104C24.8123 13.614 24.82 13.7417 24.8283 13.8772C24.859 14.3842 24.923 15.4391 26.0571 15.4391H26.0572C26.1516 15.4391 26.2531 15.431 26.3587 15.4149C27.4148 15.2544 27.3817 14.2901 27.3658 13.8268C27.3614 13.6963 27.3571 13.5729 27.3681 13.4908C27.3711 13.4701 27.3726 13.4494 27.3727 13.4286Z"
+                  fill="white"></path>
+                <path
+                  d="M17.4984 2.55284C17.6251 2.56199 17.745 2.57073 17.8449 2.58604C24.8699 3.66638 28.1006 6.99478 28.9959 14.0747C29.0111 14.1951 29.0135 14.3419 29.016 14.4973C29.0249 15.0504 29.0433 16.2011 30.2791 16.225L30.3175 16.2254C30.705 16.2254 31.0133 16.1085 31.2338 15.8778C31.6185 15.4754 31.5917 14.8776 31.57 14.3972C31.5648 14.2794 31.5597 14.1683 31.561 14.0712C31.6503 6.83021 25.3825 0.264149 18.148 0.0199752C18.118 0.0189814 18.0894 0.0205714 18.0605 0.024646C18.0463 0.0267329 18.0199 0.0293168 17.9748 0.0293168C17.9027 0.0293168 17.8139 0.0230559 17.7198 0.0166957C17.606 0.0089441 17.477 0 17.3462 0C16.1941 0 15.9751 0.818882 15.9471 1.30703C15.8825 2.43518 16.9739 2.51458 17.4984 2.55284Z"
+                  fill="white"></path>
+                <path
+                  d="M28.6566 23.2251C28.5072 23.111 28.3528 22.9929 28.2082 22.8765C27.4412 22.2592 26.6252 21.6903 25.836 21.14C25.6722 21.0259 25.5084 20.9117 25.3453 20.7973C24.3344 20.0872 23.4256 19.7422 22.5669 19.7422C21.4105 19.7422 20.4022 20.3812 19.57 21.6412C19.2013 22.1998 18.754 22.4714 18.2027 22.4714C17.8767 22.4714 17.5064 22.3784 17.102 22.1948C13.8391 20.7152 11.5091 18.4466 10.1768 15.452C9.5327 14.0046 9.74149 13.0585 10.875 12.2885C11.5187 11.8517 12.7168 11.0384 12.6319 9.48089C12.5358 7.71224 8.63342 2.3906 6.98919 1.78618C6.29305 1.53018 5.56162 1.5278 4.81131 1.78022C2.92112 2.41565 1.5647 3.53157 0.888325 5.00715C0.23471 6.43294 0.264226 8.10708 0.973691 9.84859C3.02467 14.8837 5.90825 19.2737 9.54462 22.8963C13.104 26.4426 17.4787 29.3474 22.5473 31.5299C23.0041 31.7265 23.4833 31.8337 23.8332 31.9119C23.9525 31.9387 24.0554 31.9616 24.1305 31.9822C24.1717 31.9934 24.2142 31.9995 24.2569 31.9998L24.2969 32C24.2969 32 24.2969 32 24.2971 32C26.681 32 29.5434 29.8217 30.4225 27.3382C31.1927 25.1636 29.7865 24.0887 28.6566 23.2251Z"
+                  fill="white"></path>
+                <path
+                  d="M18.5523 8.30458C18.1442 8.31492 17.2948 8.33598 16.9967 9.20108C16.8573 9.60535 16.874 9.95636 17.0464 10.2444C17.2995 10.6669 17.7842 10.7964 18.2252 10.8675C19.8243 11.1241 20.6455 12.0083 20.8098 13.6501C20.8861 14.4156 21.4016 14.9501 22.0635 14.9501C22.1124 14.9501 22.1625 14.9473 22.2122 14.9412C23.0083 14.8465 23.3942 14.2616 23.3593 13.2031C23.372 12.0983 22.7938 10.844 21.8105 9.84495C20.8237 8.84282 19.6343 8.27844 18.5523 8.30458Z"
+                  fill="white"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="history">
+        <div class="container">
+          <div class="history__inner">
+            <h3 class="title element-animation">
+              Як ми розвивались
+            </h3>
+            <div class="history__tabs element-animation">
+              <button class="history__tab active">2020</button>
+              <button class="history__tab">2021</button>
+              <button class="history__tab">2022</button>
+              <button class="history__tab">2023</button>
+              <button class="history__tab">2024</button>
+            </div>
+            <div class="history__item">
+              <ul class="element-animation">
+                <li>
+                  145 учнів
+                </li>
+                <li>
+                  15 викладачів
+                </li>
+                <li>
+                  15 занять
+                </li>
+              </ul>
+              <div class="history__img element-animation">
+                <img src="images/content/history-1.webp" alt="img">
+              </div>
+              <div class="history__text element-animation">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                </p>
+              </div>
+            </div>
+            <div class="history__item">
+              <ul class="element-animation">
+                <li>
+                  145 учнів
+                </li>
+                <li>
+                  15 викладачів
+                </li>
+                <li>
+                  15 занять
+                </li>
+              </ul>
+              <div class="history__img element-animation">
+                <img src="images/content/history-2.webp" alt="img">
+              </div>
+              <div class="history__text element-animation">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                </p>
+              </div>
+            </div>
+            <div class="history__item">
+              <ul class="element-animation">
+                <li>
+                  145 учнів
+                </li>
+                <li>
+                  15 викладачів
+                </li>
+                <li>
+                  15 занять
+                </li>
+              </ul>
+              <div class="history__img element-animation">
+                <img src="images/content/history-3.webp" alt="img">
+              </div>
+              <div class="history__text element-animation">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                </p>
+              </div>
+            </div>
+            <div class="history__item">
+              <ul class="element-animation">
+                <li>
+                  145 учнів
+                </li>
+                <li>
+                  15 викладачів
+                </li>
+                <li>
+                  15 занять
+                </li>
+              </ul>
+              <div class="history__img element-animation">
+                <img src="images/content/history-4.webp" alt="img">
+              </div>
+              <div class="history__text element-animation">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                </p>
+              </div>
+            </div>
+            <div class="history__item">
+              <ul class="element-animation">
+                <li>
+                  145 учнів
+                </li>
+                <li>
+                  15 викладачів
+                </li>
+                <li>
+                  15 занять
+                </li>
+              </ul>
+              <div class="history__img element-animation">
+                <img src="images/content/history-5.webp" alt="img">
+              </div>
+              <div class="history__text element-animation">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bg-wrap">
+        <section class="f-steps">
+          <div class="container">
+            <h3 class="title element-animation">
+              Чому ми працюємо?
+            </h3>
+            <ul>
+              <li class="element-animation">
+                <span>
+                  <p>
+                    1
+                  </p>
+                </span>
+                Тому що бажаємо надати кожній дитині можливість вивчати мову <strong>індивідуально</strong> з викладачем
+                <strong>за доступними цінами.</strong>
+              </li>
+              <li class="element-animation">
+                <span>
+                  <p>
+                    2
+                  </p>
+                </span>
+                Тому що втомились від шкільних, нудних підручників, які змушують дитину засинати на уроках. <strong>Чим
+                  більше ігор — тим краще!</strong>
+              </li>
+              <li class="element-animation">
+                <span>3</span>
+                Тому що хочемо навчити дитину говорити більше, ніж "Hello, how are you?". Кожна друга мама прохає
+                зробити
+                <strong>акцент на говорінні,</strong> і ми двома руками "за"!
+              </li>
+              <li class="element-animation">
+                <span>
+                  <p>
+                    4
+                  </p>
+                </span>
+                Тому що ми прагнемо створити школу, де навчання проходить у зручних та сприятливих умовах, а
+                <strong>вимкнення світла чи проблеми з інтернетом</strong> під час уроку <strong>не стануть причиною для
+                  пропуску заняття</strong> або втрати цінної інформації.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="selection">
+          <div class="container">
+            <h3 class="title element-animation">
+              Наші критерії підбору викладачів
+            </h3>
+            <div class="selection__inner">
+              <div class="selection__left">
+                <div class="selection__slider element-animation">
+                  <div class="selection__item">
+                    <div class="selection__item-inner">
+                      <div class="selection__item-img">
+                        <img src="images/content/selection1.webp" alt="img">
+                      </div>
+                      <div class="selection__item-box">
+                        <h6>
+                          Професійна кваліфікація
+                        </h6>
+                        <p>
+                          Ми ретельно відбираємо викладачів з високим рівнем володіння англійською мовою. Наші вчителі
+                          мають знання не нижче Upper-Intermediate.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="selection__item">
+                    <div class="selection__item-inner">
+                      <div class="selection__item-img">
+                        <img src="images/content/selection2.webp" alt="img">
+                      </div>
+                      <div class="selection__item-box">
+                        <h6>
+                          Педагогічна освіта
+                        </h6>
+                        <p>
+                          Кандидати повинні мати педагогічну освіту, яка допомагає їм розуміти процес навчання та
+                          ефективно викладати дітям.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="selection__item">
+                    <div class="selection__item-inner">
+                      <div class="selection__item-img">
+                        <img src="images/content/selection3.webp" alt="img">
+                      </div>
+                      <div class="selection__item-box">
+                        <h6>
+                          Досвід роботи
+                        </h6>
+                        <p>
+                          Ми віддаємо перевагу викладачам з досвідом роботи не менше 2 років, які можуть показати
+                          успішні
+                          результати своєї діяльності.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="selection__item">
+                    <div class="selection__item-inner">
+                      <div class="selection__item-img">
+                        <img src="images/content/selection4.webp" alt="img">
+                      </div>
+                      <div class="selection__item-box">
+                        <h6>
+                          Комунікативні навички
+                        </h6>
+                        <p>
+                          Важливо, щоб викладачі вміли знаходити спільну мову з дітьми та батьками, підтримуючи дружню і
+                          приємну атмосферу на уроках.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="selection__item">
+                    <div class="selection__item-inner">
+                      <div class="selection__item-img">
+                        <img src="images/content/selection5.webp" alt="img">
+                      </div>
+                      <div class="selection__item-box">
+                        <h6>
+                          Креативність та інноваційний підхід
+                        </h6>
+                        <p>
+                          Ми шукаємо викладачів, які використовують креативні методи навчання та інтерактивні
+                          інструменти,
+                          щоб зробити уроки цікавими та ефективними.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="selection__item">
+                    <div class="selection__item-inner">
+                      <div class="selection__item-img">
+                        <img src="images/content/selection6.webp" alt="img">
+                      </div>
+                      <div class="selection__item-box">
+                        <h6>
+                          Енергійність та ентузіазм
+                        </h6>
+                        <p>
+                          Викладачі повинні бути енергійними, мотивованими і готовими надихати дітей на вивчення
+                          англійської мови.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="selection__item">
+                    <div class="selection__item-inner">
+                      <div class="selection__item-img">
+                        <img src="images/content/selection7.webp" alt="img">
+                      </div>
+                      <div class="selection__item-box">
+                        <h6>
+                          Індивідуальний підхід
+                        </h6>
+                        <p>
+                          Ми цінуємо здатність викладачів адаптувати навчальний процес до індивідуальних потреб кожного
+                          учня, забезпечуючи персоналізоване навчання.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="selection__item">
+                    <div class="selection__item-inner">
+                      <div class="selection__item-img">
+                        <img src="images/content/selection8.webp" alt="img">
+                      </div>
+                      <div class="selection__item-box">
+                        <h6>
+                          Безперервний професійний розвиток
+                        </h6>
+                        <p>
+                          Важливо, щоб наші викладачі прагнули постійно вдосконалювати свої знання і навички, будучи
+                          відкритими до нових знань і технологій.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="selection__item">
+                    <div class="selection__item-inner">
+                      <div class="selection__item-img">
+                        <img src="images/content/selection9.webp" alt="img">
+                      </div>
+                      <div class="selection__item-box">
+                        <h6>
+                          Відповідальність та надійність
+                        </h6>
+                        <p>
+                          Ми обираємо викладачів, які показують високий рівень відповідальності та надійності, здатних
+                          забезпечити стабільний навчальний процес.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="selection__right element-animation">
+                <p>
+                  Ці критерії допомагають нам створювати команду кваліфікованих професіоналів, які забезпечують найкращі
+                  умови для ефективного навчання ваших дітей.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="choice">
+          <div class="container">
+            <h3 class="title element-animation">
+              Обираємо найкращих
+            </h3>
+            <p class="element-animation">
+              Ми ретельно ставимось до підбору викладачів в нашу команду. Для того, щоб навчати учнів в нашій школі,
+              кандидату необхідно вдало пройти 2 етапи індивідуальних співбесід. І ось як вони проходять:
+            </p>
+            <div class="choice__inner">
+              <div class="choice__text element-animation">
+                <h6>
+                  1-ший етап співбесіди
+                </h6>
+                <p>
+                  Спілкування з викладачем in English, щоб підтвердити високий рівень володіння розмовною англійською.
+                  Після цього кандидату необіхдно відповісти на ряд усних питань різної складності, які пов`язані з
+                  грамматикою.
+                </p>
+                <p>
+                  Ми навмисно не надаємо тестових завдань, які викладач може виконати самостійно, щоб справедливо
+                  оцінити
+                  його знання.
+                </p>
+              </div>
+              <div class="choice__img element-animation">
+                <img src="images/content/choice1.webp" alt="img">
+              </div>
+            </div>
+            <div class="choice__inner">
+              <div class="choice__text element-animation">
+                <h6>
+                  2-гий етап співбесіди
+                </h6>
+                <p>
+                  На ньому ми перевіряємо вміння викладача користуватись програмою Zoom, а також викладати навчальний
+                  матеріал. Вчитель проводить заняття ментору, який оцінить здатність вчителя зрозуміло пояснити
+                  граматичні правила, а також його комунікативні навички.
+                </p>
+                <p>
+                  Ментор також приділяє увагу загальній атмосфері уроку, вживання англійської мови під час заняття та
+                  структурі викладачання.
+                </p>
+              </div>
+              <div class="choice__img element-animation">
+                <img src="images/content/choice2.webp" alt="img">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="process">
+          <div class="container">
+            <h3 class="title element-animation">
+              Процес навчання
+            </h3>
+            <ul class="process__list">
+              <li class="element-animation">
+                <div class="process__img">
+                  <img src="images/content/process1.webp" alt="img">
+                </div>
+                <div class="process__box">
+                  <h6>
+                    Розмова
+                  </h6>
+                  <p>
+                    Збираємо інформацію про учня та враховуємо побажання батьків щодо викладача.
+                  </p>
+                </div>
+              </li>
+              <li class="element-animation">
+                <div class="process__img">
+                  <img src="images/content/process2.webp" alt="img">
+                </div>
+                <div class="process__box">
+                  <h6>
+                    Запис
+                  </h6>
+                  <p>
+                    Записуємо учня на перший пробний урок
+                  </p>
+                </div>
+              </li>
+              <li class="element-animation">
+                <div class="process__img">
+                  <img src="images/content/process3.webp" alt="img">
+                </div>
+                <div class="process__box">
+                  <h6>
+                    ЗНАЙОМСТВО
+                  </h6>
+                  <p>
+                    Знайомимо учня з викладачем під час пробного уроку та визначаємо рівень знань.
+                  </p>
+                </div>
+              </li>
+              <li class="element-animation">
+                <div class="process__img">
+                  <img src="images/content/process4.webp" alt="img">
+                </div>
+                <div class="process__box">
+                  <h6>
+                    Планування
+                  </h6>
+                  <p>
+                    Підбираємо навчальну програму та складаємо розклад занять.
+                  </p>
+                </div>
+              </li>
+              <li class="element-animation">
+                <div class="process__img">
+                  <img src="images/content/process5.webp" alt="img">
+                </div>
+                <div class="process__box">
+                  <h6>
+                    Підтримка
+                  </h6>
+                  <p>
+                    Залишаємося на зв'язку з батьками через Telegram або Viber 24/7.
+                  </p>
+                </div>
+              </li>
+              <li class="element-animation">
+                <div class="process__img">
+                  <img src="images/content/process6.webp" alt="img">
+                </div>
+                <div class="process__box">
+                  <h6>
+                    Нагадування
+                  </h6>
+                  <p>
+                    Повідомляємо про заняття в день уроку.
+                  </p>
+                </div>
+              </li>
+              <li class="element-animation">
+                <div class="process__img">
+                  <img src="images/content/process7.webp" alt="img">
+                </div>
+                <div class="process__box">
+                  <h6>
+                    Завдання
+                  </h6>
+                  <p>
+                    Надсилаємо домашнє завдання після кожного уроку
+                  </p>
+                </div>
+              </li>
+              <li class="element-animation">
+                <div class="process__img">
+                  <img src="images/content/process8.webp" alt="img">
+                </div>
+                <div class="process__box">
+                  <h6>
+                    Успішність
+                  </h6>
+                  <p>
+                    Щотижня надаємо батькам відгук про роботу дитини під час заняття.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <section class="entry">
+        <div class="container">
+          <div class="entry__inner">
+            <div class="entry__left">
+              <div class="entry__img element-animation">
+                <img src="images/content/entry.webp" alt="img">
+              </div>
+              <h6 class="element-animation">
+                Що чекає вашу дитину на пробному занятті?
+              </h6>
+              <ul class="element-animation">
+                <li>
+                  Покажемо, як проходять уроки
+                </li>
+                <li>
+                  Підберемо програму навчання
+                </li>
+                <li>
+                  Познайомимо з учителем
+                </li>
+                <li>
+                  Визначимо рівень знань
+                </li>
+              </ul>
+            </div>
+            <div class="entry__right">
+              <h6 class="element-animation">
+                Запишіться на пробний урок прямо зараз!
+              </h6>
+              <p class="element-animation">
+                Залиште свої дані, і ми зв'яжемося з вами найближчим часом.
+              </p>
+              <form class="form element-animation">
+                <div class="form__input-wrap">
+                  <input type="text" placeholder="Ім’я">
+                </div>
+                <div class="form__input-wrap">
+                  <input type="text" placeholder="Номер телефону">
+                </div>
+                <button class="btn btn--orange" type="submit">
+                  Спробувати безкоштовно
+                </button>
+                <p>
+                  Залишаючи заявку, Ви погоджуєтесь із <a href="#">політикою обробки персональних даних.</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="footer__logo element-animation">
+            <img src="images/icons/logo.svg" alt="logo">
+          </a>
+          <nav class="element-animation">
+            <ul>
+              <li>
+                <a href="#">Про школу</a>
+              </li>
+              <li>
+                <a href="#"> Про програму</a>
+              </li>
+              <li>
+                <a href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__box element-animation">
+            <ul>
+              <li>
+                <a href="tel:+380971615835">
+                  <img src="images/icons/phone.svg" alt="tel">
+                  +38 (097)-161-58-35
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/telegram.svg" alt="telegram">
+                  +38 (097)-161-58-35
+                </a>
+              </li>
+              <li>
+                <a href="mailto:gradefoxeng@gmail.com" target="_blank">
+                  <img src="images/icons/gmail.svg" alt="gmail">
+                  gradefoxeng@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/viber.svg" alt="viber">
+                  +38 (097)-161-58-35
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col element-animation">
+            <ul>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/fb.svg" alt="fb">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/inst.svg" alt="inst">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="subfooter">
+      <div class="container">
+        <div class="subfooter__inner">
+          <p>Gradefox 2024. All rights reserved</p>
+          <a href="#">Політика конфіденційності</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="up-page" href="#">
+    <img src="images/icons/up-page.svg" alt="up">
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

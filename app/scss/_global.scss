@@ -26,7 +26,7 @@ html {
   }
 
   @media (max-width: 575px) {
-    font-size: calc(100vw / 320 * 10);
+    font-size: calc(100vw / 360 * 10);
   }
 }
 
@@ -89,6 +89,8 @@ body.lock {
 }
 
 .container {
+  position: relative;
+  z-index: 1;
   max-width: 175rem;
   width: 100%;
   margin: 0 auto;
@@ -97,13 +99,38 @@ body.lock {
 }
 
 .title {
-  color: rgb(238, 255, 242);
-  font-family: 'Arista-Pro';
-  font-size: 11rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Comfortaa';
+  font-size: 8.4rem;
   font-weight: 700;
   line-height: 150%;
 }
 
 .bg-wrap{
   background: linear-gradient(180deg, rgba(11,31,82,1) 0%, rgba(0,185,39,0.7812501709668243) 55%, rgba(11,31,82,1) 100%);
+}
+
+.element-animation {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: linear .7s;
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal__parallax-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.modal__parallax {
+  position: absolute;
+  z-index: -1;
 }

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header element-animation">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <img src="images/icons/logo.svg" alt="logo">
+        </a>
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="#">
+                Головна
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Про нас
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Програма
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Контакти
+              </a>
+            </li>
+            <li class="mob-item">
+              <a href="tel:+380971615835" class="header__tel">
+                +38 (097)-161-58-35
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+380971615835" class="header__tel">
+          +38 (097)-161-58-35
+        </a>
+        <button class="header__menu-btn">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main">
+
+      <section class="intro intro--gradient">
+        <div class="container">
+          <div class="intro__inner">
+            <div class="intro__left element-animation">
+              <h6>Продуктивність у кожній хвилині</h6>
+              <p>
+                Чи помічали Ви, що час на уроках часто витрачається даремно? Ми теж! Наша мета - зробити кожну хвилину
+                корисною.
+              </p>
+              <p>
+                За 4 роки ми створили методику, яка дає видимі результати за кілька тижнів. Понад 2100 учнів вже
+                переконалися в її ефективності. Спробуйте й ви!
+              </p>
+              <a href="#" class="btn btn--orange">
+                записатися на пробний урок
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M27.3727 13.4286C27.4111 8.91699 23.5686 4.78104 18.807 4.20911C18.7123 4.19788 18.6092 4.18079 18.4999 4.1627C18.2642 4.12364 18.0204 4.0835 17.7745 4.0835C16.7986 4.0835 16.5377 4.76901 16.469 5.17786C16.4022 5.57537 16.4659 5.90919 16.658 6.17045C16.9812 6.60991 17.5499 6.68792 18.0066 6.75043C18.1405 6.76891 18.2668 6.7861 18.3725 6.80986C22.6506 7.76578 24.0911 9.26869 24.7951 13.5104C24.8123 13.614 24.82 13.7417 24.8283 13.8772C24.859 14.3842 24.923 15.4391 26.0571 15.4391H26.0572C26.1516 15.4391 26.2531 15.431 26.3587 15.4149C27.4148 15.2544 27.3817 14.2901 27.3658 13.8268C27.3614 13.6963 27.3571 13.5729 27.3681 13.4908C27.3711 13.4701 27.3726 13.4494 27.3727 13.4286Z"
+                    fill="white" />
+                  <path
+                    d="M17.4984 2.55284C17.6251 2.56199 17.745 2.57073 17.8449 2.58604C24.8699 3.66638 28.1006 6.99478 28.9959 14.0747C29.0111 14.1951 29.0135 14.3419 29.016 14.4973C29.0249 15.0504 29.0433 16.2011 30.2791 16.225L30.3175 16.2254C30.705 16.2254 31.0133 16.1085 31.2338 15.8778C31.6185 15.4754 31.5917 14.8776 31.57 14.3972C31.5648 14.2794 31.5597 14.1683 31.561 14.0712C31.6503 6.83021 25.3825 0.264149 18.148 0.0199752C18.118 0.0189814 18.0894 0.0205714 18.0605 0.024646C18.0463 0.0267329 18.0199 0.0293168 17.9748 0.0293168C17.9027 0.0293168 17.8139 0.0230559 17.7198 0.0166957C17.606 0.0089441 17.477 0 17.3462 0C16.1941 0 15.9751 0.818882 15.9471 1.30703C15.8825 2.43518 16.9739 2.51458 17.4984 2.55284Z"
+                    fill="white" />
+                  <path
+                    d="M28.6566 23.2251C28.5072 23.111 28.3528 22.9929 28.2082 22.8765C27.4412 22.2592 26.6252 21.6903 25.836 21.14C25.6722 21.0259 25.5084 20.9117 25.3453 20.7973C24.3344 20.0872 23.4256 19.7422 22.5669 19.7422C21.4105 19.7422 20.4022 20.3812 19.57 21.6412C19.2013 22.1998 18.754 22.4714 18.2027 22.4714C17.8767 22.4714 17.5064 22.3784 17.102 22.1948C13.8391 20.7152 11.5091 18.4466 10.1768 15.452C9.5327 14.0046 9.74149 13.0585 10.875 12.2885C11.5187 11.8517 12.7168 11.0384 12.6319 9.48089C12.5358 7.71224 8.63342 2.3906 6.98919 1.78618C6.29305 1.53018 5.56162 1.5278 4.81131 1.78022C2.92112 2.41565 1.5647 3.53157 0.888325 5.00715C0.23471 6.43294 0.264226 8.10708 0.973691 9.84859C3.02467 14.8837 5.90825 19.2737 9.54462 22.8963C13.104 26.4426 17.4787 29.3474 22.5473 31.5299C23.0041 31.7265 23.4833 31.8337 23.8332 31.9119C23.9525 31.9387 24.0554 31.9616 24.1305 31.9822C24.1717 31.9934 24.2142 31.9995 24.2569 31.9998L24.2969 32C24.2969 32 24.2969 32 24.2971 32C26.681 32 29.5434 29.8217 30.4225 27.3382C31.1927 25.1636 29.7865 24.0887 28.6566 23.2251Z"
+                    fill="white" />
+                  <path
+                    d="M18.5523 8.30458C18.1442 8.31492 17.2948 8.33598 16.9967 9.20108C16.8573 9.60535 16.874 9.95636 17.0464 10.2444C17.2995 10.6669 17.7842 10.7964 18.2252 10.8675C19.8243 11.1241 20.6455 12.0083 20.8098 13.6501C20.8861 14.4156 21.4016 14.9501 22.0635 14.9501C22.1124 14.9501 22.1625 14.9473 22.2122 14.9412C23.0083 14.8465 23.3942 14.2616 23.3593 13.2031C23.372 12.0983 22.7938 10.844 21.8105 9.84495C20.8237 8.84282 19.6343 8.27844 18.5523 8.30458Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+            <div class="intro__right intro__right--three element-animation">
+              <div class="modal__parallax-wrap element-animation">
+                <img class="modal__parallax intro-decor element-animation" src="images/icons/intro-anim5.svg" alt="icon" value="0.5">
+                <img class="modal__parallax intro-decor element-animation" src="images/icons/intro-anim6.svg" alt="icon" value="1">
+                <img class="modal__parallax intro-decor element-animation" src="images/icons/intro-anim7.svg" alt="icon" value="1.5">
+                <img class="modal__parallax intro-decor element-animation" src="images/icons/intro-anim8.svg" alt="icon" value="2">
+                <img class="modal__parallax intro-decor element-animation" src="images/icons/intro-anim9.svg" alt="icon" value="2">
+                <img class="modal__parallax intro-decor element-animation" src="images/icons/intro-anim10.svg" alt="icon" value="2">
+                <img  class="modal__parallax" src="images/content/intro3.webp" alt="img" value="0.8">
+            </div>
+            </div>
+            <a href="#" class="btn btn--orange btn-mob element-animation">
+              записатися на пробний урок 
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.3727 13.4286C27.4111 8.91699 23.5686 4.78104 18.807 4.20911C18.7123 4.19788 18.6092 4.18079 18.4999 4.1627C18.2642 4.12364 18.0204 4.0835 17.7745 4.0835C16.7986 4.0835 16.5377 4.76901 16.469 5.17786C16.4022 5.57537 16.4659 5.90919 16.658 6.17045C16.9812 6.60991 17.5499 6.68792 18.0066 6.75043C18.1405 6.76891 18.2668 6.7861 18.3725 6.80986C22.6506 7.76578 24.0911 9.26869 24.7951 13.5104C24.8123 13.614 24.82 13.7417 24.8283 13.8772C24.859 14.3842 24.923 15.4391 26.0571 15.4391H26.0572C26.1516 15.4391 26.2531 15.431 26.3587 15.4149C27.4148 15.2544 27.3817 14.2901 27.3658 13.8268C27.3614 13.6963 27.3571 13.5729 27.3681 13.4908C27.3711 13.4701 27.3726 13.4494 27.3727 13.4286Z" fill="white"></path>
+                <path d="M17.4984 2.55284C17.6251 2.56199 17.745 2.57073 17.8449 2.58604C24.8699 3.66638 28.1006 6.99478 28.9959 14.0747C29.0111 14.1951 29.0135 14.3419 29.016 14.4973C29.0249 15.0504 29.0433 16.2011 30.2791 16.225L30.3175 16.2254C30.705 16.2254 31.0133 16.1085 31.2338 15.8778C31.6185 15.4754 31.5917 14.8776 31.57 14.3972C31.5648 14.2794 31.5597 14.1683 31.561 14.0712C31.6503 6.83021 25.3825 0.264149 18.148 0.0199752C18.118 0.0189814 18.0894 0.0205714 18.0605 0.024646C18.0463 0.0267329 18.0199 0.0293168 17.9748 0.0293168C17.9027 0.0293168 17.8139 0.0230559 17.7198 0.0166957C17.606 0.0089441 17.477 0 17.3462 0C16.1941 0 15.9751 0.818882 15.9471 1.30703C15.8825 2.43518 16.9739 2.51458 17.4984 2.55284Z" fill="white"></path>
+                <path d="M28.6566 23.2251C28.5072 23.111 28.3528 22.9929 28.2082 22.8765C27.4412 22.2592 26.6252 21.6903 25.836 21.14C25.6722 21.0259 25.5084 20.9117 25.3453 20.7973C24.3344 20.0872 23.4256 19.7422 22.5669 19.7422C21.4105 19.7422 20.4022 20.3812 19.57 21.6412C19.2013 22.1998 18.754 22.4714 18.2027 22.4714C17.8767 22.4714 17.5064 22.3784 17.102 22.1948C13.8391 20.7152 11.5091 18.4466 10.1768 15.452C9.5327 14.0046 9.74149 13.0585 10.875 12.2885C11.5187 11.8517 12.7168 11.0384 12.6319 9.48089C12.5358 7.71224 8.63342 2.3906 6.98919 1.78618C6.29305 1.53018 5.56162 1.5278 4.81131 1.78022C2.92112 2.41565 1.5647 3.53157 0.888325 5.00715C0.23471 6.43294 0.264226 8.10708 0.973691 9.84859C3.02467 14.8837 5.90825 19.2737 9.54462 22.8963C13.104 26.4426 17.4787 29.3474 22.5473 31.5299C23.0041 31.7265 23.4833 31.8337 23.8332 31.9119C23.9525 31.9387 24.0554 31.9616 24.1305 31.9822C24.1717 31.9934 24.2142 31.9995 24.2569 31.9998L24.2969 32C24.2969 32 24.2969 32 24.2971 32C26.681 32 29.5434 29.8217 30.4225 27.3382C31.1927 25.1636 29.7865 24.0887 28.6566 23.2251Z" fill="white"></path>
+                <path d="M18.5523 8.30458C18.1442 8.31492 17.2948 8.33598 16.9967 9.20108C16.8573 9.60535 16.874 9.95636 17.0464 10.2444C17.2995 10.6669 17.7842 10.7964 18.2252 10.8675C19.8243 11.1241 20.6455 12.0083 20.8098 13.6501C20.8861 14.4156 21.4016 14.9501 22.0635 14.9501C22.1124 14.9501 22.1625 14.9473 22.2122 14.9412C23.0083 14.8465 23.3942 14.2616 23.3593 13.2031C23.372 12.0983 22.7938 10.844 21.8105 9.84495C20.8237 8.84282 19.6343 8.27844 18.5523 8.30458Z" fill="white"></path>
+                </svg> 
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="d-programm">
+        <div class="container">
+          <h3 class="title element-animation">
+            Наша програма для дітей - це
+          </h3>
+          <div class="d-programm__slider element-animation">
+            <div class="d-programm__item">
+              <div class="d-programm__item-inner">
+                <div class="d-programm__left">
+                  <h6>
+                    Цікаві тести у Genially
+                  </h6>
+                  <img src="images/content/d-programm1.webp" alt="img">
+                </div>
+                <div class="d-programm__imgs">
+                  <div class="d-programm__img">
+                    <img src="images/content/d-programm2.webp" alt="img">
+                  </div>
+                  <div class="d-programm__img">
+                    <img src="images/content/d-programm3.webp" alt="img">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-programm__item">
+              <div class="d-programm__item-inner">
+                <div class="d-programm__left">
+                  <h6>
+                    Цікаві тести у Genially
+                  </h6>
+                  <img src="images/content/d-programm1.webp" alt="img">
+                </div>
+                <div class="d-programm__imgs">
+                  <div class="d-programm__img">
+                    <img src="images/content/d-programm2.webp" alt="img">
+                  </div>
+                  <div class="d-programm__img">
+                    <img src="images/content/d-programm3.webp" alt="img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="conect">
+        <div class="container">
+          <h3 class="title element-animation">
+            Чому ми використовуємо Zoom?
+          </h3>
+          <div class="conect__inner">
+            <div class="conect__left element-animation">
+              <p>
+                Zoom робить уроки захоплюючими і зручними. Діти можуть малювати та виконувати вправи з віртуальним
+                олівцем, а викладачі легко управляють іграми дистанційно.
+              </p>
+              <p>
+                Ми додаємо ефекти до ігор для більшого інтересу, використовуємо віртуальну дошку для наочних пояснень і
+                забезпечуємо синхронний перегляд відео. Єдине посилання для підключення робить уроки легкими і
+                доступними.
+              </p>
+              <a href="#" class="btn btn--orange element-animation">
+                записатися на пробний урок
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M27.3727 13.4286C27.4111 8.91699 23.5686 4.78104 18.807 4.20911C18.7123 4.19788 18.6092 4.18079 18.4999 4.1627C18.2642 4.12364 18.0204 4.0835 17.7745 4.0835C16.7986 4.0835 16.5377 4.76901 16.469 5.17786C16.4022 5.57537 16.4659 5.90919 16.658 6.17045C16.9812 6.60991 17.5499 6.68792 18.0066 6.75043C18.1405 6.76891 18.2668 6.7861 18.3725 6.80986C22.6506 7.76578 24.0911 9.26869 24.7951 13.5104C24.8123 13.614 24.82 13.7417 24.8283 13.8772C24.859 14.3842 24.923 15.4391 26.0571 15.4391H26.0572C26.1516 15.4391 26.2531 15.431 26.3587 15.4149C27.4148 15.2544 27.3817 14.2901 27.3658 13.8268C27.3614 13.6963 27.3571 13.5729 27.3681 13.4908C27.3711 13.4701 27.3726 13.4494 27.3727 13.4286Z"
+                    fill="white"></path>
+                  <path
+                    d="M17.4984 2.55284C17.6251 2.56199 17.745 2.57073 17.8449 2.58604C24.8699 3.66638 28.1006 6.99478 28.9959 14.0747C29.0111 14.1951 29.0135 14.3419 29.016 14.4973C29.0249 15.0504 29.0433 16.2011 30.2791 16.225L30.3175 16.2254C30.705 16.2254 31.0133 16.1085 31.2338 15.8778C31.6185 15.4754 31.5917 14.8776 31.57 14.3972C31.5648 14.2794 31.5597 14.1683 31.561 14.0712C31.6503 6.83021 25.3825 0.264149 18.148 0.0199752C18.118 0.0189814 18.0894 0.0205714 18.0605 0.024646C18.0463 0.0267329 18.0199 0.0293168 17.9748 0.0293168C17.9027 0.0293168 17.8139 0.0230559 17.7198 0.0166957C17.606 0.0089441 17.477 0 17.3462 0C16.1941 0 15.9751 0.818882 15.9471 1.30703C15.8825 2.43518 16.9739 2.51458 17.4984 2.55284Z"
+                    fill="white"></path>
+                  <path
+                    d="M28.6566 23.2251C28.5072 23.111 28.3528 22.9929 28.2082 22.8765C27.4412 22.2592 26.6252 21.6903 25.836 21.14C25.6722 21.0259 25.5084 20.9117 25.3453 20.7973C24.3344 20.0872 23.4256 19.7422 22.5669 19.7422C21.4105 19.7422 20.4022 20.3812 19.57 21.6412C19.2013 22.1998 18.754 22.4714 18.2027 22.4714C17.8767 22.4714 17.5064 22.3784 17.102 22.1948C13.8391 20.7152 11.5091 18.4466 10.1768 15.452C9.5327 14.0046 9.74149 13.0585 10.875 12.2885C11.5187 11.8517 12.7168 11.0384 12.6319 9.48089C12.5358 7.71224 8.63342 2.3906 6.98919 1.78618C6.29305 1.53018 5.56162 1.5278 4.81131 1.78022C2.92112 2.41565 1.5647 3.53157 0.888325 5.00715C0.23471 6.43294 0.264226 8.10708 0.973691 9.84859C3.02467 14.8837 5.90825 19.2737 9.54462 22.8963C13.104 26.4426 17.4787 29.3474 22.5473 31.5299C23.0041 31.7265 23.4833 31.8337 23.8332 31.9119C23.9525 31.9387 24.0554 31.9616 24.1305 31.9822C24.1717 31.9934 24.2142 31.9995 24.2569 31.9998L24.2969 32C24.2969 32 24.2969 32 24.2971 32C26.681 32 29.5434 29.8217 30.4225 27.3382C31.1927 25.1636 29.7865 24.0887 28.6566 23.2251Z"
+                    fill="white"></path>
+                  <path
+                    d="M18.5523 8.30458C18.1442 8.31492 17.2948 8.33598 16.9967 9.20108C16.8573 9.60535 16.874 9.95636 17.0464 10.2444C17.2995 10.6669 17.7842 10.7964 18.2252 10.8675C19.8243 11.1241 20.6455 12.0083 20.8098 13.6501C20.8861 14.4156 21.4016 14.9501 22.0635 14.9501C22.1124 14.9501 22.1625 14.9473 22.2122 14.9412C23.0083 14.8465 23.3942 14.2616 23.3593 13.2031C23.372 12.0983 22.7938 10.844 21.8105 9.84495C20.8237 8.84282 19.6343 8.27844 18.5523 8.30458Z"
+                    fill="white"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="conect__right element-animation">
+              <img src="images/content/conect1.webp" alt="img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-programm">
+        <div class="container">
+          <h3 class="title element-animation">
+            Наша програма це:
+          </h3>
+          <ul>
+            <li class="element-animation">
+              <img src="images/content/p-programm1.webp" alt="">
+              <h6>
+                Акцент на важливих речах
+              </h6>
+              <p>
+                Необхідно зробити акцент на якомусь аспекті навчання? Не проблема, викладач може приділити більше уваги
+                розмовній мові або граматиці
+              </p>
+            </li>
+            <li class="element-animation">
+              <img src="images/content/p-programm2.webp" alt="">
+              <h6>
+                Гнучкість
+              </h6>
+              <p>
+                Можливість змінити навчальну програму: терміново необхідно вивчити якусь тему щоб написати контрольну
+                роботу на 12? З радістю допоможемо!
+              </p>
+            </li>
+            <li class="element-animation">
+              <img src="images/content/p-programm3.webp" alt="">
+              <h6>
+                Структурованість
+              </h6>
+              <p>
+                Вивчення тем з можливістю їх повторення, щоб завоєний матеріал не забувався
+              </p>
+            </li>
+            <li class="element-animation">
+              <img src="images/content/p-programm4.webp" alt="">
+              <h6>
+                Інтерактивність
+              </h6>
+              <p>
+                Велика кількість цікавих вправ
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="graph">
+        <div class="container">
+          <h3 class="title element-animation">
+            GradeFox vs звичайна школа
+          </h3>
+          <div class="graph__text element-animation">
+            <p>
+              “Я не зрозумів цю тему, тому написав контрольну погано...”
+            </p>
+          </div>
+          <div class="graph__inner">
+            <div class="graph__left element-animation">
+              <p>
+                Знайома ситуація?
+              </p>
+              <img src="images/content/graph1.webp" alt="img">
+              <p>
+                Комфорт дитини під час навчання — наш пріоритет
+              </p>
+            </div>
+            <div class="graph__right">
+              <h6 class="element-animation">Знайома ситуація?</h6>
+              <p class="element-animation">
+                У звичайній школі теми проходять поспіхом, не зважаючи на реальне розуміння учнів. У нашій школі дитина вивчає тему стільки, скільки потрібно для повного засвоєння. Програма побудована так, щоб учні регулярно повторювали матеріал і не забували його.
+              </p>
+              <img class="element-animation" src="images/content/graph2.webp" alt="img">
+              <h6 class="element-animation">Комфорт дитини під час навчання — наш пріоритет</h6>
+              <p class="element-animation">
+                Спочатку викладач використовує 50% рідної мови та 50% англійської для пояснення матеріалу. З часом частка англійської збільшується, що дозволяє учню комфортно перейти до впевненого володіння мовою без стресу та прогалин.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <section class="entry">
+        <div class="container">
+          <div class="entry__inner">
+            <div class="entry__left">
+              <div class="entry__img element-animation">
+                <img src="images/content/entry.webp" alt="img">
+              </div>
+              <h6 class="element-animation">
+                Що чекає вашу дитину на пробному занятті?
+              </h6>
+              <ul class="element-animation">
+                <li>
+                  Покажемо, як проходять уроки
+                </li>
+                <li>
+                  Підберемо програму навчання
+                </li>
+                <li>
+                  Познайомимо з учителем
+                </li>
+                <li>
+                  Визначимо рівень знань
+                </li>
+              </ul>
+            </div>
+            <div class="entry__right">
+              <h6 class="element-animation">
+                Запишіться на пробний урок прямо зараз!
+              </h6>
+              <p class="element-animation">
+                Залиште свої дані, і ми зв'яжемося з вами найближчим часом.
+              </p>
+              <form class="form element-animation">
+                <div class="form__input-wrap">
+                  <input type="text" placeholder="Ім’я">
+                </div>
+                <div class="form__input-wrap">
+                  <input type="text" placeholder="Номер телефону">
+                </div>
+                <button class="btn btn--orange" type="submit">
+                  Спробувати безкоштовно
+                </button>
+                <p>
+                  Залишаючи заявку, Ви погоджуєтесь із <a href="#">політикою обробки персональних даних.</a> 
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="footer__logo element-animation">
+            <img src="images/icons/logo.svg" alt="logo">
+          </a>
+          <nav class="element-animation">
+            <ul>
+              <li>
+                <a href="#">Про школу</a>
+              </li>
+              <li>
+                <a href="#"> Про програму</a>
+              </li>
+              <li>
+                <a href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__box element-animation">
+            <ul>
+              <li>
+                <a href="tel:+380971615835">
+                  <img src="images/icons/phone.svg" alt="tel">
+                  +38 (097)-161-58-35
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/telegram.svg" alt="telegram">
+                  +38 (097)-161-58-35
+                </a>
+              </li>
+              <li>
+                <a href="mailto:gradefoxeng@gmail.com" target="_blank">
+                  <img src="images/icons/gmail.svg" alt="gmail">
+                  gradefoxeng@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/viber.svg" alt="viber">
+                  +38 (097)-161-58-35
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col element-animation">
+            <ul>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/fb.svg" alt="fb">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/inst.svg" alt="inst">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="subfooter">
+      <div class="container">
+        <div class="subfooter__inner">
+          <p>Gradefox 2024. All rights reserved</p>
+          <a href="#">Політика конфіденційності</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="up-page" href="#">
+    <img src="images/icons/up-page.svg" alt="up">
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

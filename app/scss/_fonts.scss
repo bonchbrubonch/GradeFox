@@ -49,19 +49,20 @@
 }
 
 @font-face {
-  font-family: 'Arista-Pro';
-  src: local('Arista-Pro-Alternate-Bold-trial'), local('Arista-Pro-Alternate-Bold-trial'),
-    url('../fonts/Arista-Pro-Alternate-Bold-trial.woff2') format('woff2'),
-    url('../fonts/Arista-Pro-Alternate-Bold-trial.woff') format('woff');
-  font-weight: 700;
+  font-family: 'Comfortaa';
+  src: local('Comfortaa-Regular'), local('Comfortaa-Regular'),
+    url('../fonts/Comfortaa-Regular.woff2') format('woff2'),
+    url('../fonts/Comfortaa-Regular.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Arista-Pro';
-  src: local('Arista-Pro-Alternate-Regular-trial'), local('Arista-Pro-Alternate-Regular-trial'),
-    url('../fonts/Arista-Pro-Alternate-Regular-trial.woff2') format('woff2'),
-    url('../fonts/Arista-Pro-Alternate-Regular-trial.woff') format('woff');
-  font-weight: 400;
+  font-family: 'Comfortaa';
+  src: local('Comfortaa-Bold'), local('Comfortaa-Bold'),
+    url('../fonts/Comfortaa-Bold.woff2') format('woff2'),
+    url('../fonts/Comfortaa-Bold.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
 }
+
